@@ -9,17 +9,38 @@ namespace KisiEnvanter.WFA
         public Form1()
         {
             InitializeComponent();
+            Application.CurrentCulture = new System.Globalization.CultureInfo("en-US");
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             Kisi yeniKisi = new Kisi();
-            yeniKisi.Ad = "ahmet ++++nur çebi";
-            //yeniKisi.Soyad = "Fıdıl";
-            //yeniKisi.Yas = 30;
 
-            this.Text = yeniKisi.Ad;
+            /*
+             * try-catch 
+             * kullanıcı veri girişlerinde
+             * tip dönüşümlerinde
+             * db işlemlerinde
+             * dosya işlemlerinde
+             * sunucu isteklerinde
+             */
+            try
+            {
+                yeniKisi.Ad = "s";
+                //yeniKisi.Soyad = "Fıdıl";
+                //yeniKisi.Yas = 30;
 
+                this.Text = yeniKisi.Ad;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+
+            }
+            
         }
     }
 }

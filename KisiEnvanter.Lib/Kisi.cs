@@ -4,7 +4,7 @@ namespace KisiEnvanter.Lib
 {
     public class Kisi
     {
-
+        //ad soyad ceptelefon (10 haneli 5 ile başlayacak) emil(@ işareti 1 adet . olacak) tckn (11hane 0la başlayamaz tek rakamla bitemez)
         /*
          * Access Modifier 
          * Private
@@ -15,10 +15,13 @@ namespace KisiEnvanter.Lib
          */
         private string _ad;
         private string _soyad;
-        private int _yas;
+        private DateTime _dogumTarihi;
 
         //Encapsulation
         //Property
+        /// <summary>
+        /// Ad propertysi falan filan
+        /// </summary>
         public string Ad
         {
             set
@@ -47,6 +50,42 @@ namespace KisiEnvanter.Lib
                 //return son + "\b";
             }
         }
+        public string Soyad
+        {
+            get
+            {
+                return _soyad;
+            }
+            set
+            {
+                _soyad = value;
+            }
+        }
+        public DateTime DogumTarihi
+        {
+            set { _dogumTarihi = value; }
+        }
+        public int Yas //readonly prop
+        {
+            get
+            {
+                return DateTime.Now.Year - _dogumTarihi.Year;
+            }
+        }
+
+        private string _telefon;
+
+        public string Telefon
+        {
+            get { return _telefon; }
+            set { _telefon = value; }
+        }
+
+        // 234234
+        // 123123.101.104
+    }
+    class Deneme
+    {
 
     }
 }
