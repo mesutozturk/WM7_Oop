@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 
 namespace KisiEnvanter.Lib
 {
@@ -14,8 +15,9 @@ namespace KisiEnvanter.Lib
          * *Protected Internal
          */
         private string _ad;
-        private string _soyad;
+        //private string _soyad;
         private DateTime _dogumTarihi;
+        private string _email;
 
         //Encapsulation
         //Property
@@ -50,17 +52,7 @@ namespace KisiEnvanter.Lib
                 //return son + "\b";
             }
         }
-        public string Soyad
-        {
-            get
-            {
-                return _soyad;
-            }
-            set
-            {
-                _soyad = value;
-            }
-        }
+        public string Soyad { get; set; }
         public DateTime DogumTarihi
         {
             set { _dogumTarihi = value; }
@@ -81,11 +73,32 @@ namespace KisiEnvanter.Lib
             set { _telefon = value; }
         }
 
+        public string Email
+        {
+            get
+            {
+                return _email;
+            }
+            set
+            {
+                Regex regex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,4})+)$");
+                Match match = regex.Match(value);
+                if (match.Success)
+                {
+                    _email = value.ToLower().Trim();
+                }
+                else
+                    throw new Exception("Email formatınız hatalıdır");
+
+            }
+        }
         // 234234
         // 123123.101.104
     }
     class Deneme
     {
-
+        public string A { get; set; }
+        public int B { get; set; }
+        public long Logn { get; set; }
     }
 }

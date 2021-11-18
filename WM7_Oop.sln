@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31903.59
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KisiEnvanter.WFA", "KisiEnvanter.WFA\KisiEnvanter.WFA.csproj", "{001FB8B0-1ACE-4E86-858D-B6FFFE20EB79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KisiEnvanter.WFA", "KisiEnvanter.WFA\KisiEnvanter.WFA.csproj", "{001FB8B0-1ACE-4E86-858D-B6FFFE20EB79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KisiEnvanter.Lib", "KisiEnvanter.Lib\KisiEnvanter.Lib.csproj", "{572F6636-88C3-4B00-BD36-8D83B02C40A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KisiEnvanter.Lib", "KisiEnvanter.Lib\KisiEnvanter.Lib.csproj", "{572F6636-88C3-4B00-BD36-8D83B02C40A0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gün 1", "Gün 1", "{13FEB58F-CE2E-44AC-8E2C-0AB58A2020CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gün 2", "Gün 2", "{CF36BE4C-1593-425D-8949-A7EF32C4A742}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +28,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{001FB8B0-1ACE-4E86-858D-B6FFFE20EB79} = {13FEB58F-CE2E-44AC-8E2C-0AB58A2020CF}
+		{572F6636-88C3-4B00-BD36-8D83B02C40A0} = {13FEB58F-CE2E-44AC-8E2C-0AB58A2020CF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DFEC8F21-B97E-4030-96B9-A0115D5CA817}
