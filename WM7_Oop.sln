@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gün 1", "Gün 1", "{13FEB5
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gün 2", "Gün 2", "{CF36BE4C-1593-425D-8949-A7EF32C4A742}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kitaplik", "Kitaplik\Kitaplik.csproj", "{8574DD42-A75A-485F-A4BE-92BDE69FEF6A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{572F6636-88C3-4B00-BD36-8D83B02C40A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{572F6636-88C3-4B00-BD36-8D83B02C40A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{572F6636-88C3-4B00-BD36-8D83B02C40A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8574DD42-A75A-485F-A4BE-92BDE69FEF6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8574DD42-A75A-485F-A4BE-92BDE69FEF6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8574DD42-A75A-485F-A4BE-92BDE69FEF6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8574DD42-A75A-485F-A4BE-92BDE69FEF6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{001FB8B0-1ACE-4E86-858D-B6FFFE20EB79} = {13FEB58F-CE2E-44AC-8E2C-0AB58A2020CF}
 		{572F6636-88C3-4B00-BD36-8D83B02C40A0} = {13FEB58F-CE2E-44AC-8E2C-0AB58A2020CF}
+		{8574DD42-A75A-485F-A4BE-92BDE69FEF6A} = {CF36BE4C-1593-425D-8949-A7EF32C4A742}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DFEC8F21-B97E-4030-96B9-A0115D5CA817}
