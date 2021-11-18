@@ -13,5 +13,10 @@ namespace Kitaplik
         public int Baski { get; set; }
         public string YazarAdSoyad { get; set; }
         public DateTime EklenmeZamani { get; private set; }
+
+        public override string ToString()
+        {
+            return $"{Ad} - {Yil}";
+        }
     }
 }
