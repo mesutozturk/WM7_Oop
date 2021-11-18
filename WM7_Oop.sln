@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gün 2", "Gün 2", "{CF36BE
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kitaplik", "Kitaplik\Kitaplik.csproj", "{8574DD42-A75A-485F-A4BE-92BDE69FEF6A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minesweeper", "Minesweeper\Minesweeper.csproj", "{0A7D28C4-29D7-4ED7-93F6-B4C91C389655}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{8574DD42-A75A-485F-A4BE-92BDE69FEF6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8574DD42-A75A-485F-A4BE-92BDE69FEF6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8574DD42-A75A-485F-A4BE-92BDE69FEF6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A7D28C4-29D7-4ED7-93F6-B4C91C389655}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A7D28C4-29D7-4ED7-93F6-B4C91C389655}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A7D28C4-29D7-4ED7-93F6-B4C91C389655}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A7D28C4-29D7-4ED7-93F6-B4C91C389655}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,6 +45,7 @@ Global
 		{001FB8B0-1ACE-4E86-858D-B6FFFE20EB79} = {13FEB58F-CE2E-44AC-8E2C-0AB58A2020CF}
 		{572F6636-88C3-4B00-BD36-8D83B02C40A0} = {13FEB58F-CE2E-44AC-8E2C-0AB58A2020CF}
 		{8574DD42-A75A-485F-A4BE-92BDE69FEF6A} = {CF36BE4C-1593-425D-8949-A7EF32C4A742}
+		{0A7D28C4-29D7-4ED7-93F6-B4C91C389655} = {CF36BE4C-1593-425D-8949-A7EF32C4A742}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DFEC8F21-B97E-4030-96B9-A0115D5CA817}
