@@ -29,6 +29,7 @@ namespace Kitaplik
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.txtAd = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,6 +40,11 @@ namespace Kitaplik
             this.txtYil = new System.Windows.Forms.TextBox();
             this.btnEkle = new System.Windows.Forms.Button();
             this.lstKitaplar = new System.Windows.Forms.ListBox();
+            this.btnGuncelle = new System.Windows.Forms.Button();
+            this.cmsSil = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.silToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bilgiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsSil.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -107,9 +113,9 @@ namespace Kitaplik
             // 
             // btnEkle
             // 
-            this.btnEkle.Location = new System.Drawing.Point(141, 142);
+            this.btnEkle.Location = new System.Drawing.Point(151, 142);
             this.btnEkle.Name = "btnEkle";
-            this.btnEkle.Size = new System.Drawing.Size(134, 77);
+            this.btnEkle.Size = new System.Drawing.Size(124, 78);
             this.btnEkle.TabIndex = 2;
             this.btnEkle.Text = "Ekle";
             this.btnEkle.UseVisualStyleBackColor = true;
@@ -117,6 +123,7 @@ namespace Kitaplik
             // 
             // lstKitaplar
             // 
+            this.lstKitaplar.ContextMenuStrip = this.cmsSil;
             this.lstKitaplar.FormattingEnabled = true;
             this.lstKitaplar.ItemHeight = 20;
             this.lstKitaplar.Location = new System.Drawing.Point(282, 10);
@@ -125,11 +132,44 @@ namespace Kitaplik
             this.lstKitaplar.TabIndex = 3;
             this.lstKitaplar.SelectedIndexChanged += new System.EventHandler(this.lstKitaplar_SelectedIndexChanged);
             // 
+            // btnGuncelle
+            // 
+            this.btnGuncelle.Location = new System.Drawing.Point(13, 142);
+            this.btnGuncelle.Name = "btnGuncelle";
+            this.btnGuncelle.Size = new System.Drawing.Size(124, 78);
+            this.btnGuncelle.TabIndex = 4;
+            this.btnGuncelle.Text = "Güncelle";
+            this.btnGuncelle.UseVisualStyleBackColor = true;
+            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
+            // 
+            // cmsSil
+            // 
+            this.cmsSil.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.cmsSil.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.silToolStripMenuItem,
+            this.bilgiToolStripMenuItem});
+            this.cmsSil.Name = "cmsSil";
+            this.cmsSil.Size = new System.Drawing.Size(211, 80);
+            // 
+            // silToolStripMenuItem
+            // 
+            this.silToolStripMenuItem.Name = "silToolStripMenuItem";
+            this.silToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.silToolStripMenuItem.Text = "Sil";
+            this.silToolStripMenuItem.Click += new System.EventHandler(this.silToolStripMenuItem_Click);
+            // 
+            // bilgiToolStripMenuItem
+            // 
+            this.bilgiToolStripMenuItem.Name = "bilgiToolStripMenuItem";
+            this.bilgiToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.bilgiToolStripMenuItem.Text = "Bilgi";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(592, 450);
+            this.Controls.Add(this.btnGuncelle);
             this.Controls.Add(this.lstKitaplar);
             this.Controls.Add(this.btnEkle);
             this.Controls.Add(this.txtYil);
@@ -142,6 +182,7 @@ namespace Kitaplik
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.cmsSil.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -159,5 +200,9 @@ namespace Kitaplik
         private System.Windows.Forms.TextBox txtYil;
         private System.Windows.Forms.Button btnEkle;
         private System.Windows.Forms.ListBox lstKitaplar;
+        private System.Windows.Forms.Button btnGuncelle;
+        private System.Windows.Forms.ContextMenuStrip cmsSil;
+        private System.Windows.Forms.ToolStripMenuItem silToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bilgiToolStripMenuItem;
     }
 }
