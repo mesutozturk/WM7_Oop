@@ -75,14 +75,13 @@ namespace Sekiller
                 uretilecek = new Kare(rnd.Next(3, 59));
                 uretilecek.X = rnd.Next(3, 59);
             }
-            else if(counter % 3 == 1)
+            else if (counter % 3 == 1)
             {
                 uretilecek = new Dikdortgen(rnd.Next(5, 98), rnd.Next(5, 98))
                 {
                     X = rnd.Next(5, 98),
                     Y = rnd.Next(5, 98)
                 };
-                
             }
             else
             {
@@ -91,5 +90,16 @@ namespace Sekiller
             sekiller.Add(uretilecek);
             counter++;
         }
+
+        /*
+         * ad soyad telefon tckn 
+         * öğrenci
+         * öğretmen
+         * personel
+         * veli
+         * öğretmen ve personel maaş
+         * personelin maaşı sabit
+         * öğretmen maaşı saat ücreti üzerinden hesaplanacak
+         */
     }
 }
