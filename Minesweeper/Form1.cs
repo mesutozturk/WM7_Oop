@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Windows.Forms;
 
 namespace Minesweeper
@@ -40,6 +41,17 @@ namespace Minesweeper
             }
             //Linq 
             this.Text = $"Bomba Sayısı: {_mineStatus.Count(x => x)}";
+            _mineStatus.ForEach(x =>
+            {
+                x = !x;
+            });
+
+            /*
+             * entityframework core
+             * fluent api
+             * data annotation
+             * code-first yaklaşımı
+             */
         }
 
         private void Btn_Click(object? sender, EventArgs e)

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Windows.Forms;
 
 namespace Kitaplik
@@ -25,10 +26,28 @@ namespace Kitaplik
                 };
                 _kitaplar.Add(kitap);
                 ListeyiDoldur();
+                FormuTemizle();
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Bir hata oluştu: {ex.Message}");
+            }
+        }
+
+        private void FormuTemizle()
+        {
+            foreach (Component control in this.Controls)
+            {
+                if (control is TextBox)
+                {
+                    TextBox txt = control as TextBox;
+                    txt.Text = string.Empty;
+                }
+                else if (control is ComboBox cmb)
+                {
+                    cmb.SelectedIndex = 0;
+                }
+
             }
         }
 
