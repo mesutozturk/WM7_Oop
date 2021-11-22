@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31911.196
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KisiEnvanter.WFA", "KisiEnvanter.WFA\KisiEnvanter.WFA.csproj", "{001FB8B0-1ACE-4E86-858D-B6FFFE20EB79}"
 EndProject
@@ -17,7 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Minesweeper", "Minesweeper\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gün 3", "Gün 3", "{02B578B5-1466-4442-9F6A-6C78557C7510}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sekiller", "Sekiller\Sekiller.csproj", "{50534E0C-C794-4D62-9F9A-72383AF008DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sekiller", "Sekiller\Sekiller.csproj", "{50534E0C-C794-4D62-9F9A-72383AF008DF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gün 4", "Gün 4", "{FDF4F2DC-91F3-42DD-9417-7181C6225518}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRM_Form", "CRM_Form\CRM_Form.csproj", "{953A6F92-28CA-4FB3-83BE-226730708504}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,10 @@ Global
 		{50534E0C-C794-4D62-9F9A-72383AF008DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50534E0C-C794-4D62-9F9A-72383AF008DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50534E0C-C794-4D62-9F9A-72383AF008DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{953A6F92-28CA-4FB3-83BE-226730708504}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{953A6F92-28CA-4FB3-83BE-226730708504}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{953A6F92-28CA-4FB3-83BE-226730708504}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{953A6F92-28CA-4FB3-83BE-226730708504}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +63,7 @@ Global
 		{8574DD42-A75A-485F-A4BE-92BDE69FEF6A} = {CF36BE4C-1593-425D-8949-A7EF32C4A742}
 		{0A7D28C4-29D7-4ED7-93F6-B4C91C389655} = {CF36BE4C-1593-425D-8949-A7EF32C4A742}
 		{50534E0C-C794-4D62-9F9A-72383AF008DF} = {02B578B5-1466-4442-9F6A-6C78557C7510}
+		{953A6F92-28CA-4FB3-83BE-226730708504} = {FDF4F2DC-91F3-42DD-9417-7181C6225518}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DFEC8F21-B97E-4030-96B9-A0115D5CA817}
