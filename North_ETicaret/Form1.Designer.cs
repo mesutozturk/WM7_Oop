@@ -40,6 +40,7 @@
             this.lstCategory.Name = "lstCategory";
             this.lstCategory.Size = new System.Drawing.Size(310, 644);
             this.lstCategory.TabIndex = 0;
+            this.lstCategory.SelectedIndexChanged += new System.EventHandler(this.lstCategory_SelectedIndexChanged);
             // 
             // lstProduct
             // 

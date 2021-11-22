@@ -1,12 +1,7 @@
-﻿using North_ETicaret.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using North_ETicaret.Models;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace North_ETicaret
@@ -20,8 +15,23 @@ namespace North_ETicaret
         NorthwindContext _dbContext = new NorthwindContext();
         private void Form1_Load(object sender, EventArgs e)
         {
-            lstCategory.DataSource = _dbContext.Categories.ToList();
+            lstCategory.DataSource = _dbContext.Categories.Include(x => x.Products).ToList();
             lstCategory.DisplayMember = "CategoryName";
+        }
+
+        Category _selectedCategory;
+        private void lstCategory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (lstCategory.SelectedItem == null) return;
+
+            _selectedCategory = (Category)lstCategory.SelectedItem;
+
+
+            lstProduct.DataSource = _selectedCategory.Products.ToList();
+            //lstProduct.DataSource = _dbContext.Products
+            //    .Where(x => x.CategoryId == _selectedCategory.CategoryId)
+            //    .ToList();
+            lstProduct.DisplayMember = "ProductName";
         }
     }
 }
