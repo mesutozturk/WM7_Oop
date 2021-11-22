@@ -20,7 +20,7 @@ namespace CRM_Form
             dtpDogumTarihi.Value = SelectedEmployee.BirthDay;
         }
 
-        private void btnVazgeç_Click(object sender, System.EventArgs e)
+        private void btnVazgec_Click(object sender, System.EventArgs e)
         {
             this.DialogResult = DialogResult.Cancel;
             this.Close();

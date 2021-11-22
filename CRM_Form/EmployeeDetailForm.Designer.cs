@@ -36,7 +36,7 @@
             this.txtFirma = new System.Windows.Forms.TextBox();
             this.dtpDogumTarihi = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnVazgeç = new System.Windows.Forms.Button();
+            this.btnVazgec = new System.Windows.Forms.Button();
             this.btnKaydet = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -104,15 +104,15 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Doğum Tarihi";
             // 
-            // btnVazgeç
+            // btnVazgec
             // 
-            this.btnVazgeç.Location = new System.Drawing.Point(14, 187);
-            this.btnVazgeç.Name = "btnVazgeç";
-            this.btnVazgeç.Size = new System.Drawing.Size(158, 75);
-            this.btnVazgeç.TabIndex = 3;
-            this.btnVazgeç.Text = "Vazgeç";
-            this.btnVazgeç.UseVisualStyleBackColor = true;
-            this.btnVazgeç.Click += new System.EventHandler(this.btnVazgeç_Click);
+            this.btnVazgec.Location = new System.Drawing.Point(14, 187);
+            this.btnVazgec.Name = "btnVazgec";
+            this.btnVazgec.Size = new System.Drawing.Size(158, 75);
+            this.btnVazgec.TabIndex = 3;
+            this.btnVazgec.Text = "Vazgeç";
+            this.btnVazgec.UseVisualStyleBackColor = true;
+            this.btnVazgec.Click += new System.EventHandler(this.btnVazgec_Click);
             // 
             // btnKaydet
             // 
@@ -131,7 +131,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(417, 301);
             this.Controls.Add(this.btnKaydet);
-            this.Controls.Add(this.btnVazgeç);
+            this.Controls.Add(this.btnVazgec);
             this.Controls.Add(this.dtpDogumTarihi);
             this.Controls.Add(this.txtFirma);
             this.Controls.Add(this.label4);
@@ -160,7 +160,7 @@
         private System.Windows.Forms.TextBox txtFirma;
         private System.Windows.Forms.DateTimePicker dtpDogumTarihi;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btnVazgeç;
+        private System.Windows.Forms.Button btnVazgec;
         private System.Windows.Forms.Button btnKaydet;
     }
 }
