@@ -15,7 +15,10 @@ namespace North_ETicaret
         NorthwindContext _dbContext = new NorthwindContext();
         private void Form1_Load(object sender, EventArgs e)
         {
-            lstCategory.DataSource = _dbContext.Categories.Include(x => x.Products).ToList();
+            lstCategory.DataSource = _dbContext.Categories
+                .Include(x => x.Products)
+                .ThenInclude(x => x.OrderDetails)
+                .ToList();
             lstCategory.DisplayMember = "CategoryName";
         }
 
@@ -32,6 +35,49 @@ namespace North_ETicaret
             //    .Where(x => x.CategoryId == _selectedCategory.CategoryId)
             //    .ToList();
             lstProduct.DisplayMember = "ProductName";
+        }
+        Product _selectedProduct;
+        private void lstProduct_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (lstProduct.SelectedItem == null) return;
+
+            _selectedProduct = (Product)lstProduct.SelectedItem;
+            txtUrunAdi.Text = _selectedProduct.ProductName;
+            if (_selectedProduct.UnitPrice.HasValue)
+                nUrunFiyati.Value = _selectedProduct.UnitPrice.Value;
+
+            nUrunFiyati.Value = _selectedProduct.UnitPrice.GetValueOrDefault();
+
+            //Supplier productSupplier = _dbContext.Suppliers.FirstOrDefault(x => x.SupplierId == _selectedProduct.SupplierId);
+            Supplier productSupplier = _dbContext.Suppliers.Find(_selectedProduct.SupplierId);
+
+            if (productSupplier != null)
+            {
+                this.Text = productSupplier.CompanyName;
+            }
+
+            lstOrderDetails.DataSource = _selectedProduct.OrderDetails.ToList();
+            lstOrderDetails.DisplayMember = "OrderId";
+        }
+
+        private void btnProductInsert_Click(object sender, EventArgs e)
+        {
+            Product product = new Product()
+            {
+                CategoryId = _selectedCategory.CategoryId,
+                ProductName = txtUrunAdi.Text,
+                UnitPrice = nUrunFiyati.Value
+            };
+            _dbContext.Products.Add(product);
+            _dbContext.SaveChanges();
+        }
+
+        private void btnProductUpdate_Click(object sender, EventArgs e)
+        {
+            _selectedProduct.ProductName = txtUrunAdi.Text;
+            _selectedProduct.UnitPrice = nUrunFiyati.Value;
+
+            _dbContext.SaveChanges();
         }
     }
 }
