@@ -79,5 +79,15 @@ namespace North_ETicaret
 
             _dbContext.SaveChanges();
         }
+
+        private void txtCategoryAra_TextChanged(object sender, EventArgs e)
+        {
+            var txt = txtCategoryAra.Text.ToLower();
+            var result = _dbContext.Categories
+                //.Where(x => x.CategoryName.ToLower().Contains(txt) || x.Description.ToLower().Contains(txt))
+                .Where(x => x.CategoryName.ToLower().Contains(txt))
+                .ToList();
+            lstCategory.DataSource = result;
+        }
     }
 }
