@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace North_ETicaret.Repository
 {
@@ -6,5 +7,6 @@ namespace North_ETicaret.Repository
     {
         T Get(Tid id);
         List<T> GetAll();
+        IQueryable<T> Include(params string[] include);
     }
 }

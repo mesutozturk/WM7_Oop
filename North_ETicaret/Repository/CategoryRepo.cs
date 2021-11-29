@@ -1,4 +1,5 @@
-﻿using North_ETicaret.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using North_ETicaret.Models;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -33,6 +34,15 @@ namespace North_ETicaret.Repository
         public int Save()
         {
             return Context.SaveChanges();
+        }
+
+        public IQueryable<Category> Include(params string[] include)
+        {
+            foreach (var item in include)
+            {
+                Table.Include(item);
+            }
+            return Table;
         }
     }
 }
