@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using North_ETicaret.Models;
+using North_ETicaret.Repository;
 using System;
 using System.Linq;
 using System.Windows.Forms;
@@ -13,8 +14,11 @@ namespace North_ETicaret
             InitializeComponent();
         }
         NorthwindContext _dbContext = new NorthwindContext();
+        CategoryRepo _categoryRepo = new CategoryRepo();
         private void Form1_Load(object sender, EventArgs e)
         {
+            var query = _categoryRepo.Table.Include("Products.Supplier").ToList();
+
             lstCategory.DataSource = _dbContext.Categories
                 .Include(x => x.Products)
                 .ThenInclude(x => x.OrderDetails)
