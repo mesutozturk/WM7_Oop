@@ -21,11 +21,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sekiller", "Sekiller\Sekill
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gün 4", "Gün 4", "{FDF4F2DC-91F3-42DD-9417-7181C6225518}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRM_Form", "CRM_Form\CRM_Form.csproj", "{953A6F92-28CA-4FB3-83BE-226730708504}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CRM_Form", "CRM_Form\CRM_Form.csproj", "{953A6F92-28CA-4FB3-83BE-226730708504}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Northwind DB-First", "Northwind DB-First", "{7925BADE-A455-4579-9C12-FF4AFBC696EA}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gün 5 - Northwind DB-First", "Gün 5 - Northwind DB-First", "{7925BADE-A455-4579-9C12-FF4AFBC696EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "North_ETicaret", "North_ETicaret\North_ETicaret.csproj", "{BFD3C84A-0AFD-4590-BD9A-7E2FA9B8157B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "North_ETicaret", "North_ETicaret\North_ETicaret.csproj", "{BFD3C84A-0AFD-4590-BD9A-7E2FA9B8157B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gün 6", "Gün 6", "{9DBA3FDD-9218-480E-9C95-0022BA698308}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
