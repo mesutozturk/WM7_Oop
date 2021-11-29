@@ -18,6 +18,7 @@ namespace North_ETicaret.Repository
         }
         public void Add(Category entity)
         {
+            //logger.log(kategori eklendi)
             Table.Add(entity);
         }
 

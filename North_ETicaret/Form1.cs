@@ -66,6 +66,16 @@ namespace North_ETicaret
 
         private void btnProductInsert_Click(object sender, EventArgs e)
         {
+
+            CategoryRepo categoryRepo = new CategoryRepo();
+
+            categoryRepo.Add(new Category()
+            {
+                CategoryName = "Deneme",
+                Description = " Aciklama1"
+            });
+            categoryRepo.Save();
+
             Product product = new Product()
             {
                 CategoryId = _selectedCategory.CategoryId,
